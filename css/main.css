@@ -35,11 +35,13 @@ body {
   text-align: center;
   font-family: 'Quicksand', sans-serif; }
 
-video {
+.video-container video {
   object-fit: cover;
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
+/*  width: 100vw;
+  height: 100vh;*/
+  width: 100%;
+  height: 100%;
+  position: absolute;
   top: 0;
   left: 0;
 }
@@ -47,7 +49,6 @@ video {
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
   display: table;
-  position: relative;
   width: 100%;
   height: 100%;
   /* For at least Firefox */
@@ -62,6 +63,14 @@ video {
 .cover-container {
   margin-right: auto;
   margin-left: auto; }
+
+.cover-container .content-area {
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
 
 /* Padding for spacing */
 .inner {
@@ -92,7 +101,7 @@ video {
  */
 .cover {
   padding: 0 20px;
-  position: relative;
+  position: fixed;
 }
 
 .cover .btn-notify {
@@ -102,12 +111,11 @@ video {
   border-radius: 40px; }
 
 .cover-heading {
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 10px;
   font-size: 2rem;
-  margin: 3rem 5rem
-}
+  margin-bottom: 3rem; }
 
 @media (min-width: 768px) {
   .cover-heading {
@@ -116,8 +124,7 @@ video {
 
 .cover-copy {
   max-width: 500px;
-  font-weight: 600;
-  margin: 0 auto 3rem; }
+  margin: 0 auto 1.5rem; }
 
 /*
  * Footer
@@ -173,4 +180,17 @@ video {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 1060px; } }
+    width: 1060px; }
+
+  .cover-container .content-area {
+    left: auto;
+  }
+
+  .cover {
+    margin-top: 150px;
+    width: 1060px;
+  }
+  .cover-heading{
+    margin-bottom: 5rem;
+  }
+}

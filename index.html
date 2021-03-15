@@ -19,33 +19,34 @@
 
   </head>
   <body id="top"><div class="site-wrapper">
-  <video playsinline autoplay muted loop poster="polkaverse.png" id="bgvid">
-    <source src="polkaverse.mp4" type="video/mp4">
-  </video>
-  <div class="site-wrapper-inner">
+
+    <div class="video-container">
+      <video playsinline autoplay muted loop poster="polkaverse.png" id="bgvid">
+        <source src="polkaverse.mp4" type="video/mp4">
+      </video>  
+    </div>
+    <div class="site-wrapper-inner">
     <div class="cover-container">
-      <div class="masthead clearfix">
-        <div class="inner">
-          <h3 class="masthead-brand">Coming Soon</h3>
-          <nav class="nav nav-masthead">
-            <a class="nav-link nav-social" href="#" title="Facebook"><i class="fab fa-medium" aria-hidden="true"></i></a>
-            <a class="nav-link nav-social" href="#" title="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-            <a class="nav-link nav-social" href="#" title="Youtube"><i class="fab fa-discord" aria-hidden="true"></i></a>
-            <a class="nav-link nav-social" href="#" title="Instagram"><i class="fab fa-telegram" aria-hidden="true"></i></a>
-          </nav>
+      <div class="content-area">
+        <div class="masthead clearfix">
+          <div class="inner">
+            <h3 class="masthead-brand">Coming Soon</h3>
+            <nav class="nav nav-masthead">
+              <a class="nav-link nav-social" href="#" title="Facebook"><i class="fab fa-medium" aria-hidden="true"></i></a>
+              <a class="nav-link nav-social" href="#" title="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+              <a class="nav-link nav-social" href="#" title="Youtube"><i class="fab fa-discord" aria-hidden="true"></i></a>
+              <a class="nav-link nav-social" href="#" title="Instagram"><i class="fab fa-telegram" aria-hidden="true"></i></a>
+            </nav>
+          </div>
+        </div>      
+        <div class="inner cover">
+          <div class="logo">
+            <object data="img/polkaverse-white.svg" type="image/svg+xml" ></object>
+          </div>
+          <h1 class="cover-heading">Polkaverse</h1>
+          <p class="lead cover-copy">Hold tight as the universe cools down and materializes.</p>
+          <p class="lead"><button type="button" class="btn btn-lg btn-default btn-notify" data-toggle="modal" data-target="#subscribeModal">Notify Me</button></p>
         </div>
-      </div>      
-      <div class="inner cover">
-         <!-- LOGO -->
-        <div class="logo">
-          <!-- ICON LOGO VIKINGER -->
-          <object data="img/polkaverse-white.svg" type="image/svg+xml" ></object>
-          <!-- /ICON LOGO VIKINGER -->
-        </div>
-        <!-- /LOGO -->
-        <h1 class="cover-heading">Polkaverse</h1>
-        <p class="lead cover-copy">Hold tight as the universe cools down and materializes.</p>
-        <p class="lead"><button type="button" class="btn btn-lg btn-default btn-notify" data-toggle="modal" data-target="#subscribeModal">Notify Me</button></p>
       </div>
       <div class="modal fade" id="subscribeModal" tabindex="-1" role="dialog" aria-labelledby="subscribeModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -71,7 +72,7 @@
         </div>
     </div>
   </div>
-</div>
+  </div>
     <script src="scripts/jquery.slim.min.js?ver=1.2.0"></script>
     <script src="scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>
     <script src="scripts/main.js?ver=1.2.0"></script>
